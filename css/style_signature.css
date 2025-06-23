@@ -9,8 +9,9 @@
     src: url(../fonts/Roboto-Bold.ttf);
 }
 
-body {
-  background-color: white;
+#content {
+    width: 100%;
+    background-color: white;
 }
 
 #contact_email_link {
