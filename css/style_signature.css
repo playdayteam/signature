@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+#link_website {
+    color: #A9B2BB;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 130%;
+}
+
+#button_social_group {
+    padding-top: 5px;
+}
+
+.button_social {
+    padding-left: 12px;
+    text-decoration: none;
+}
+
+.button_social:first-child {
+    padding-left: 0px;
+}
+
+.button_social_text {
+    color: #2A3134;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.85rem;
+    font-weight: normal;
+    padding-left: 6px;
+    vertical-align: top;
+    line-height: 130%;
+}
+
+.top_data {
+    float: left;
+}
+
+#contact_name {
+    color: #2A3134;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 1.275rem;
+    font-weight: bold;
+    line-height: 130%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#company_data {
+    padding-right: 20px;
+}
+
+#contact_position {
+    color: #A9B2BB;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 1.1rem;
+    line-height: 130%;
+    padding-top: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#contact_data {
+    padding-right: 20px;
+}
+
+#button_contact_data {
+    padding-top: 11px;
+}
+
+#button_email {
+    display: block;
+}
+
+#button_phone {
+    padding-top: 6px;
+    padding-left: 0px;
+    display: block;
+}
+
+#short_description {
+    color: #2A3134;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 130%;
+    padding-top: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    clear: left;
+}
+
+#full_description {
+    color: #A9B2BB;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.7rem;
+    font-weight: normal;
+    line-height: 130%;
+    padding-top: 4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#address_title {
+    color: #A9B2BB;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 130%;
+    padding-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#address_title:fullscreen {
+    padding-top: 0px;
+}
+
+#address_field {
+    color: #2A3134;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 130%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#address_country {
+    color: #A9B2BB;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 130%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
