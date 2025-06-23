@@ -132,12 +132,18 @@ async function myFunction(tr) {
   let contactEmail = domModelTemplate.getElementById('contact_email');
   contactEmail.textContent = mail;
 
+  let contactEmailLink = domModelTemplate.getElementById('contact_email_link');
+  contactEmailLink.setAttribute("href", `mailto: ${mail}`);
+
   if (phone == "-") {
     let buttonPhone = domModelTemplate.getElementById('button_phone');
     buttonPhone.remove();
   } else {
     let contactPhone = domModelTemplate.getElementById('contact_phone');
     contactPhone.textContent = phone;
+
+    let contactPhoneLink = domModelTemplate.getElementById('contact_phone_link');
+    contactPhoneLink.setAttribute("href", `tel: ${phone}`);
   }
 
   const newTab = window.open('', '_blank');
