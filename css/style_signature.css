@@ -9,6 +9,10 @@
     src: url(../fonts/Roboto-Bold.ttf);
 }
 
+body {
+  background-color: white;
+}
+
 #link_website {
     color: #A9B2BB;
     text-decoration: none;
