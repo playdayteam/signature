@@ -13,6 +13,18 @@ body {
   background-color: white;
 }
 
+#contact_email_link {
+    display: block;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+#contact_phone_link {
+    display: block;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
 #link_website {
     color: #A9B2BB;
     text-decoration: none;
