@@ -114,43 +114,44 @@ function parseHtmlToDom(htmlString) {
   return doc;
 }
 
-async function myFunction(tr) {
-  let name = tr.getElementsByClassName('name')[0].innerText;
-  let position = tr.getElementsByClassName('position')[0].innerText;
-  let mail = tr.getElementsByClassName('mail')[0].innerText;
-  let phone = tr.getElementsByClassName('phone')[0].innerText;
+function myFunction(tr) {
+  readHtmlFileToDom('signature_template.html').then((domModelTemplate) => {
+    let name = tr.getElementsByClassName('name')[0].innerText;
+    let position = tr.getElementsByClassName('position')[0].innerText;
+    let mail = tr.getElementsByClassName('mail')[0].innerText;
+    let phone = tr.getElementsByClassName('phone')[0].innerText;
 
-  let domModelTemplate = await readHtmlFileToDom('signature_template.html');
-  console.log(domModelTemplate);
+    console.log(domModelTemplate);
 
-  let contactName = domModelTemplate.getElementById('contact_name');
-  contactName.textContent = name;
+    let contactName = domModelTemplate.getElementById('contact_name');
+    contactName.textContent = name;
 
-  let contactPosition = domModelTemplate.getElementById('contact_position');
-  contactPosition.textContent = position;
+    let contactPosition = domModelTemplate.getElementById('contact_position');
+    contactPosition.textContent = position;
 
-  let contactEmail = domModelTemplate.getElementById('contact_email');
-  contactEmail.textContent = mail;
+    let contactEmail = domModelTemplate.getElementById('contact_email');
+    contactEmail.textContent = mail;
 
-  let contactEmailLink = domModelTemplate.getElementById('contact_email_link');
-  contactEmailLink.setAttribute("href", `mailto: ${mail}`);
+    let contactEmailLink = domModelTemplate.getElementById('contact_email_link');
+    contactEmailLink.setAttribute("href", `mailto: ${mail}`);
 
-  if (phone == "-") {
-    let buttonPhone = domModelTemplate.getElementById('button_phone');
-    buttonPhone.remove();
-  } else {
-    let contactPhone = domModelTemplate.getElementById('contact_phone');
-    contactPhone.textContent = phone;
+    if (phone == "-") {
+      let buttonPhone = domModelTemplate.getElementById('button_phone');
+      buttonPhone.remove();
+    } else {
+      let contactPhone = domModelTemplate.getElementById('contact_phone');
+      contactPhone.textContent = phone;
 
-    let contactPhoneLink = domModelTemplate.getElementById('contact_phone_link');
-    contactPhoneLink.setAttribute("href", `tel: ${phone}`);
-  }
+      let contactPhoneLink = domModelTemplate.getElementById('contact_phone_link');
+      contactPhoneLink.setAttribute("href", `tel: ${phone}`);
+    }
 
-  const newTab = window.open('', '_blank');
-  if (newTab) {
-    newTab.document.writeln(domModelTemplate.documentElement.outerHTML);
-    newTab.document.close();
-  } else {
-    alert('Popup blocked. Please allow popups for this site.');
-  }
+    const newTab = window.open('', '_top');
+    if (newTab) {
+      newTab.document.writeln(domModelTemplate.documentElement.outerHTML);
+      newTab.document.close();
+    } else {
+      alert('Popup blocked. Please allow popups for this site.');
+    }
+  });
 }
