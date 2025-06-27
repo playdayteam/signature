@@ -42,12 +42,14 @@
 /* Links */
 
 #contact_email_link {
+    text-decoration: none;
     padding-top: 13px;
     padding-left: 0px;
     margin-left: 0px;
 }
 
 #contact_phone_link {
+    text-decoration: none;
     padding-top: 6px;
     padding-left: 0px;
     margin-left: 0px;
