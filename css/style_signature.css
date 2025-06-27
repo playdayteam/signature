@@ -1,27 +1,72 @@
-@font-face {
-    font-family: "Roboto";
-    src: url(../fonts/Roboto-Regular.ttf);
+/* Flex */
+
+.flex_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-@font-face {
-    font-family: "Roboto";
-    font-weight: bold;
-    src: url(../fonts/Roboto-Bold.ttf);
+#flex_second_line {
+    padding-top: 20px;
 }
+
+.flex_content_item:first-child {
+    flex-basis: 120px;
+}
+
+.flex_content_item:nth-child(2) {
+    flex-basis: 208px;
+}
+
+/* Content */
 
 #content {
     width: 100%;
     background-color: white;
 }
 
-#contact_email_link {
+.logo {
     display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+#contact_name {
+    color: #2A3134;
+    text-decoration: none;
+    font-family: verdana, serif;
+    font-size: 1.375rem;
+    font-weight: normal;
+    font-size-adjust: none;
+    line-height: 130%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#contact_position {
+    color: #A9B2BB;
+    text-decoration: none;
+    font-family: verdana, serif;
+    font-size: 0.875rem;
+    line-height: 130%;
+    padding-top: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#button_phone {
+    padding-top: 6px;
+    padding-left: 0px;
+}
+
+/* Links */
+
+#contact_email_link {
     padding-left: 0px;
     margin-left: 0px;
 }
 
 #contact_phone_link {
-    display: block;
     padding-top: 6px;
     padding-left: 0px;
     margin-left: 0px;
@@ -30,11 +75,15 @@
 #link_website {
     color: #A9B2BB;
     text-decoration: none;
-    font-family: "Roboto";
+    font-family: verdana, serif;
     font-size: 0.85rem;
     font-weight: normal;
     line-height: 130%;
+    display: block;
+    margin-top: 0px;
 }
+
+/* Button socials */
 
 #button_social_group {
     padding-top: 5px;
@@ -52,7 +101,7 @@
 .button_social_text {
     color: #2A3134;
     text-decoration: none;
-    font-family: "Roboto";
+    font-family: verdana, serif;
     font-size: 0.85rem;
     font-weight: normal;
     padding-left: 6px;
@@ -60,58 +109,47 @@
     line-height: 130%;
 }
 
-.top_data {
-    float: left;
-}
+/* Address */
 
-#contact_name {
-    color: #2A3134;
-    text-decoration: none;
-    font-family: "Roboto";
-    font-size: 1.275rem;
-    font-weight: bold;
-    line-height: 130%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-#company_data {
-    padding-right: 20px;
-}
-
-#contact_position {
+#address_title {
     color: #A9B2BB;
     text-decoration: none;
-    font-family: "Roboto";
-    font-size: 1.1rem;
+    font-family: verdana, serif;
+    font-size: 0.85rem;
+    font-weight: normal;
     line-height: 130%;
-    padding-top: 2px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-#contact_data {
-    padding-right: 20px;
+#address_value {
+    color: #2A3134;
+    text-decoration: none;
+    font-family: verdana, serif;
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 130%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-#button_contact_data {
-    padding-top: 11px;
+#address_country {
+    color: #A9B2BB;
+    text-decoration: none;
+    font-family: verdana, serif;
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 130%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-#button_email {
-    display: block;
-}
-
-#button_phone {
-    padding-top: 6px;
-    padding-left: 0px;
-    display: block;
-}
+/* Bottom descriptions */
 
 #short_description {
     color: #2A3134;
     text-decoration: none;
-    font-family: "Roboto";
+    font-family: verdana, serif;
     font-size: 0.7rem;
     font-weight: bold;
     line-height: 130%;
@@ -124,49 +162,11 @@
 #full_description {
     color: #A9B2BB;
     text-decoration: none;
-    font-family: "Roboto";
+    font-family: verdana, serif;
     font-size: 0.7rem;
     font-weight: normal;
     line-height: 130%;
     padding-top: 4px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-#address_title {
-    color: #A9B2BB;
-    text-decoration: none;
-    font-family: "Roboto";
-    font-size: 0.85rem;
-    font-weight: normal;
-    line-height: 130%;
-    padding-top: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-#address_title:fullscreen {
-    padding-top: 0px;
-}
-
-#address_field {
-    color: #2A3134;
-    text-decoration: none;
-    font-family: "Roboto";
-    font-size: 0.85rem;
-    font-weight: normal;
-    line-height: 130%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-#address_country {
-    color: #A9B2BB;
-    text-decoration: none;
-    font-family: "Roboto";
-    font-size: 0.85rem;
-    font-weight: normal;
-    line-height: 130%;
     margin-top: 0px;
     margin-bottom: 0px;
 }
