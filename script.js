@@ -136,7 +136,7 @@ function myFunction(tr) {
     contactEmailLink.setAttribute("href", `mailto: ${mail}`);
 
     if (phone == "-") {
-      let buttonPhone = domModelTemplate.getElementById('contact_phone');
+      let buttonPhone = domModelTemplate.getElementById('contact_phone_link');
       buttonPhone.remove();
     } else {
       let contactPhone = domModelTemplate.getElementById('contact_phone');
