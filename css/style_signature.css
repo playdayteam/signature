@@ -11,6 +11,11 @@
     padding-bottom: 18px;
 }
 
+#address_content {
+    padding-bottom: 20px;
+    clear: both;
+}
+
 #contact_name {
     color: #2A3134;
     text-decoration: none;
